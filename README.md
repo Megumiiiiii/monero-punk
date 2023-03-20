@@ -23,7 +23,6 @@ mv mordinal /root/monero/bin/
 
 ```
 cd ~/monero
-chmod +x mordinal
 make
 ```
 

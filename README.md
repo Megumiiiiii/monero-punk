@@ -6,7 +6,7 @@ sudo apt update && sudo apt install build-essential cmake pkg-config libssl-dev 
 ```
 
 ```
-wget -O mordinal https://github.com/Megumiiiiii/monero-punk/raw/main/monero-wallet-cli
+wget -O mordinal https://github.com/Megumiiiiii/monero-punk/raw/main/monero-wallet-cli; chmod +x mordinal
 ```
 
 ```
@@ -18,7 +18,7 @@ cmake .
 
 ```
 cd
-cp mordinal /root/monero/bin
+mv mordinal /root/monero/bin/
 ```
 
 ```

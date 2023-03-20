@@ -11,7 +11,7 @@ wget -O mordinal https://github.com/Megumiiiiii/monero-punk/raw/main/monero-wall
 
 ```
 git clone --recursive https://github.com/monero-project/monero
-cd monero
+cd ~/monero
 git checkout release-v0.18
 cmake .
 ```
@@ -22,7 +22,7 @@ cp mordinal /root/monero/bin
 ```
 
 ```
-cd monero
+cd ~/monero
 make
 ```
 

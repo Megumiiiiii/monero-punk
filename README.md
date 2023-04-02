@@ -6,43 +6,29 @@ sudo apt update && sudo apt install build-essential cmake pkg-config libssl-dev 
 ```
 
 ```
-wget -O mordinal https://github.com/Backup-Guide/monero-punk/raw/main/monero-wallet-cli; chmod +x mordinal
+git clone --recursive https://github.com/mooonero/mordinals
 ```
 
 ```
-git clone --recursive https://github.com/monero-project/monero
-cd ~/monero
-git checkout release-v0.18
-cmake .
+cd mordinals
+make cmake-release
+cd build/Linux/master/release
+make simplewallet daemon
 ```
 
 ```
-cd
-mv mordinal /root/monero/bin/
-chmod 777 /root/monero/bin/mordinal
+export PATH="$PATH:$HOME/mordinals/build/Linux/master/release/bin"
+monerod --log-file monerod.log --bootstrap-daemon-address=xmr-node.cakewallet.com:18081 --detach
 ```
 
 ```
-cd ~/monero
-make
-```
-
-```
-export PATH="$HOME/monero/bin:$PATH"
-monerod --bootstrap-daemon-address=xmr-node.cakewallet.com:18081 --detach
-```
-
-```
-mordinal
+monero-wallet-cli
 ```
 
 Silahakan create wallet dan lanjutkan
 
 Command mint
 
-```
-mint_ordinal /root/file.png /root/file.txt AddressMoneroMu
-```
 
 
-[HOW TO MINT](https://mordinals.gitbook.io/handbook/how-to-mint)
+[HOW TO](https://mordinals.gitbook.io/handbook/wallet-commands)

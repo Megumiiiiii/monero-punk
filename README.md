@@ -41,6 +41,12 @@ Tunggu sync
 
 ### Command
 
+Restore Wallet
+
+```
+monero-wallet-cli --restore-deterministic-wallet
+```
+
 
 
 [HOW TO](https://mordinals.gitbook.io/handbook/wallet-commands)

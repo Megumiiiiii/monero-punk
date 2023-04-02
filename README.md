@@ -27,7 +27,19 @@ monero-wallet-cli
 
 Silahakan create wallet dan lanjutkan
 
-Command mint
+Setelah create wallet jalankan command ini di `wallet-cli`
+
+```
+set_daemon xmr-node.cakewallet.com:18081 trusted
+```
+Tunggu sync
+
+![Screenshot_120](https://user-images.githubusercontent.com/98658943/229365527-2849b4b5-53a2-4b20-ad9d-076642958bdc.png)
+
+
+
+
+### Command
 
 
 

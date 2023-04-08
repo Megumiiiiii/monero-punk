@@ -18,6 +18,9 @@ make simplewallet daemon
 
 ```
 export PATH="$PATH:$HOME/mordinals/build/Linux/master/release/bin"
+```
+
+```
 monerod --log-file monerod.log --bootstrap-daemon-address=xmr-node.cakewallet.com:18081 --detach
 ```
 
